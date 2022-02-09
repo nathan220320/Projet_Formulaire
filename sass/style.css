@@ -1,6 +1,6 @@
 body {
   background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
-  background-size: 100% 1200px;
+  background-size: 100% 100vh;
   height: 98vh;
   display: flex;
   justify-content: center;
@@ -10,8 +10,21 @@ body {
 main {
   background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
   width: 67.7%;
-  height: 63.3%;
+  height: 80%;
   border-radius: 25px;
+}
+
+@media only screen and (max-width: 768px) {
+  main {
+    width: 81%;
+    height: 89%;
+  }
+}
+@media only screen and (max-width: 425px) {
+  main {
+    width: 76.5%;
+    height: 96%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
