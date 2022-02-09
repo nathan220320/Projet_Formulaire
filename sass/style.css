@@ -31,6 +31,7 @@ input {
   box-shadow: inset 17px -17px 17px rgba(194, 194, 194, 0.1), inset -17px 17px 17px rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(34px);
   border-radius: 15px;
+  margin-left: 10%;
 }
 .gauche {
   width: 50%;
@@ -60,13 +61,14 @@ input {
 }
 
 .nom {
-  width: 45%;
+  width: 35%;
   height: 45%;
 }
 
 .prenom {
-  width: 45%;
+  width: 35%;
   height: 45%;
+  margin-left: 3%;
 }
 
 .contain-mail {
@@ -75,7 +77,7 @@ input {
 
 .email {
   height: 45%;
-  width: 90%;
+  width: 73.5%;
 }
 
 .contain-msg {
@@ -83,7 +85,7 @@ input {
 }
 
 .message {
-  width: 90%;
+  width: 73.5%;
   height: 90%;
 }
 
