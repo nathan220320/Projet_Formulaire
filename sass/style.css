@@ -1,6 +1,17 @@
 body {
   background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
-  background-size: 100% 950px;
+  background-size: 100% 1200px;
+  height: 98vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+  width: 67.7%;
+  height: 63.3%;
+  border-radius: 25px;
 }
 
 /*# sourceMappingURL=style.css.map */
