@@ -1,9 +1,6 @@
 body {
-  background-color: #000;
-}
-
-main {
-  display: flex;
+  background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
+  background-size: 100% 950px;
 }
 
 /*# sourceMappingURL=style.css.map */
