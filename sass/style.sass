@@ -139,13 +139,27 @@ button
     height: 45%
     border-radius: 10px
 
+.info
+    img
+        height: 50px
+        width: 50px
 
 .contain-location
-    display: flex
+    +flexContain
     
 
 .contain-gif
     width: 50%
+
+
+.tel
+    display: flex
+    align-items: center
+
+.adresse-mail
+    +flexContain
+
+
 // ______________________________________________________________________________
 @media #{$tablette}
     main
