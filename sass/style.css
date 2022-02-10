@@ -68,8 +68,6 @@ form {
   width: 50%;
   height: 100%;
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
 }
 
@@ -165,23 +163,25 @@ button {
 
 .contain-location {
   display: flex;
-  justify-content: center;
   align-items: center;
+  margin-left: 30%;
 }
 
 .contain-gif {
   width: 50%;
+  margin-left: 25%;
 }
 
 .tel {
   display: flex;
   align-items: center;
+  margin-left: 30%;
 }
 
 .adresse-mail {
   display: flex;
-  justify-content: center;
   align-items: center;
+  margin-left: 30%;
 }
 
 @media only screen and (max-width: 768px) {
