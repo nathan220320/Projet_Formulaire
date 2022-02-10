@@ -145,6 +145,9 @@ button
 
 
 .info
+    display: flex
+    flex-direction: column
+    align-items: center
     grid-area: info
     margin-top: 8%
     img
@@ -152,11 +155,10 @@ button
         width: 50px
 
 .contain-location
-    width: 70%
+    
     height: 30%
     display: flex
     align-items: center
-    margin-left: 30%
     margin-bottom: 2%
     p
         margin-left: 3%
@@ -180,9 +182,8 @@ button
 .tel
     display: flex
     align-items: center
-    margin-left: 30%
     margin-bottom: 2%
-    width: 70%
+    
     height: 30%
     p
         margin-left: 3%
@@ -190,8 +191,7 @@ button
 .adresse-mail
     display: flex
     align-items: center
-    margin-left: 30%
-    width: 70%
+    
     height: 30%
     p
         margin-left: 3%
@@ -214,8 +214,6 @@ button
     height: 100%
     
 @media #{$up-pc}
-    .info
-        margin-left: -10%
 
     .droite
         grid-template-rows: 35% 45% 20% 
@@ -223,8 +221,7 @@ button
 
 
 @media #{$m-pc}
-    .info
-        margin-left: -30%
+    
 
     .droite
         grid-template-rows: 35% 35% 30% 

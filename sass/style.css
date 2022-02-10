@@ -158,6 +158,9 @@ button {
 }
 
 .info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   grid-area: info;
   margin-top: 8%;
 }
@@ -167,11 +170,9 @@ button {
 }
 
 .contain-location {
-  width: 70%;
   height: 30%;
   display: flex;
   align-items: center;
-  margin-left: 30%;
   margin-bottom: 2%;
 }
 .contain-location p {
@@ -191,9 +192,7 @@ button {
 .tel {
   display: flex;
   align-items: center;
-  margin-left: 30%;
   margin-bottom: 2%;
-  width: 70%;
   height: 30%;
 }
 .tel p {
@@ -203,8 +202,6 @@ button {
 .adresse-mail {
   display: flex;
   align-items: center;
-  margin-left: 30%;
-  width: 70%;
   height: 30%;
 }
 .adresse-mail p {
@@ -233,19 +230,11 @@ button {
 }
 
 @media only screen and (max-width: 1440px) {
-  .info {
-    margin-left: -10%;
-  }
-
   .droite {
     grid-template-rows: 35% 45% 20%;
   }
 }
 @media only screen and (max-width: 1024px) {
-  .info {
-    margin-left: -30%;
-  }
-
   .droite {
     grid-template-rows: 35% 35% 30%;
   }
