@@ -1,5 +1,6 @@
 @import "mixins.scss"
-    
+$up-pc: "only screen and (max-width: 1440px)"
+$m-pc: "only screen and (max-width: 1024px)"
 $tablette: "only screen and (max-width: 768px)"
 $phone: "only screen and (max-width: 425px)"
 
@@ -72,7 +73,7 @@ form
     display: grid
     grid-template-columns: 100%
     grid-template-rows: 45% 35% 20% 
-    grid-template-areas: "gif" "info" "icon"
+    grid-template-areas: "animation" "info" "icon"
    
     
 
@@ -145,11 +146,14 @@ button
 
 .info
     grid-area: info
+    margin-top: 8%
     img
         height: 50px
         width: 50px
 
 .contain-location
+    width: 70%
+    height: 30%
     display: flex
     align-items: center
     margin-left: 30%
@@ -158,10 +162,19 @@ button
         margin-left: 3%
     
 
+   
+
 .contain-gif
-    grid-area: gif
-    width: 50%
-    margin-left: 25%
+    width: 100%
+    grid-area: animation
+    display: flex
+    justify-content: center
+    svg
+        width: 50%
+    
+
+
+    
 
 
 .tel
@@ -169,6 +182,8 @@ button
     align-items: center
     margin-left: 30%
     margin-bottom: 2%
+    width: 70%
+    height: 30%
     p
         margin-left: 3%
 
@@ -176,7 +191,8 @@ button
     display: flex
     align-items: center
     margin-left: 30%
-    margin-bottom: 9%
+    width: 70%
+    height: 30%
     p
         margin-left: 3%
 
@@ -197,7 +213,22 @@ button
 .contain-right
     height: 100%
     
+@media #{$up-pc}
+    .info
+        margin-left: -10%
 
+    .droite
+        grid-template-rows: 35% 45% 20% 
+
+
+
+@media #{$m-pc}
+    .info
+        margin-left: -30%
+
+    .droite
+        grid-template-rows: 35% 35% 30% 
+        
 
 // ______________________________________________________________________________
 @media #{$tablette}
