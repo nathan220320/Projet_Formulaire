@@ -52,18 +52,26 @@ hr
 .gauche
     width: 50%
     height: 100%
-    display: grid
-    grid-template-columns: 100%
-    grid-template-rows: 15% 15% 15% 40% 15%
-    grid-template-areas: "title" "nom" "mail" "msg" "btn" 
+  
     p
         margin-left: 15px
         margin-bottom: 10px
     
 
+form
+    height: 100%
+    border: solid 1px #000
+    display: grid
+    grid-template-columns: 100%
+    grid-template-rows: 15% 15% 15% 40% 15%
+    grid-template-areas: "title" "nom" "mail" "msg" "btn" 
+    
+
 .droite
     width: 50%
     height: 100%
+    +flexContain
+    flex-direction: column
     
 
 .contain-title
@@ -131,6 +139,10 @@ button
     height: 45%
     border-radius: 10px
 
+
+.contain-location
+    display: flex
+    
 
 .contain-gif
     width: 50%
