@@ -39,7 +39,6 @@ input
     border-radius: 15px
     
 
-
 h1
     font-family: 'Montserrat', sans-serif
     color: #fff
@@ -232,37 +231,168 @@ button
 @media #{$tablette}
     main
         width: 81%
-        height: 89%
+        height: 95%
         flex-direction: column
         p
-            font-size: 20px
+            font-size: 18px
 
         h1
-            font-size: 30px
+            font-size: 25px
 
     .gauche
         width: 100%
-        height: 50%
+        height: 45%
         order: 1
+
+    .icon
+        margin-bottom: 2%
+        img
+            width: 45px
+            height: 45px
+        
 
     .droite
         width:100%
-        height: 50% 
-        grid-template-rows: 18% 40% 30% 12%
+        height: 55% 
+        grid-template-rows: 15% 40% 30% 15%
         grid-template-areas: "title2" "animation" "info" "icon"
 
     .contain-title
         display: none
+        grid-area: title
 
     .contain-title2
         display: block
         grid-area: title2
+        +flexContain
+        flex-direction: column
+        hr
+            margin-top: 0
+            width: 37%
+
+    .info
+        margin: 0
+
+    .contain-info
+        width: 100%
+        height: 100%
+        img
+            width: 35px
+            height: 35px
+        display: grid
+        grid-template-columns: 50% 50%
+        grid-template-rows: 50% 50%
+        grid-template-areas: "location tel" "mail mail"
+
+    .contain-location
+        grid-area: location
+        justify-content: center
+        margin-top: 6%
+
+
+    .tel
+        grid-area: tel
+        justify-content: center
+        margin-top: 6%
+
+    .adresse-mail
+        justify-content: center
+        margin-top: 3%
+        grid-area: mail
+
+    form
+        display: grid
+        grid-template-rows: 20% 20% 45% 15%
+        grid-template-columns: 100% 
+        grid-template-areas: "nom" "mail" "msg" "btn"
+    
+    p
+        margin: 0
+    
+    .contain-nom
+        height: 100%
+        p
+            margin-bottom: 1%
+            margin-left: 5%
+
+    .nom
+        height: 45%
+        
+    .contain-prenom
+        height: 100%
+        p
+            margin-bottom: 1%
+            margin-left: 5%
+
+    .prenom
+        height: 45%
+   
+
+    .mail
+        height: 100%
+        p
+            margin-bottom: 1%
+            margin-left: 2%
+
+    .email
+        height: 45%
+
+    .contain-nom-prenom
+        align-items: center
+
+    .msg
+        height: 100%
+        p
+            margin-bottom: 1%
+            margin-left: 2%
+
+    .message
+        height: 80%
+
+    .contain-btn
+        button
+            height: 70%
+            width: 30%
 
 // _________________________________________________________________________________________
 
 @media #{$phone}
     main
-        width: 76.5%
-        height: 96%
+        width: 90%
+        height: 97%
+        p
+            font-size: 14px
+
+
+    .contain-gif
+        width: 60%
+
+    .contain-title2
+        h1
+            font-size: 20px
+
+    .contain-location
+        margin: 0
+
+    .tel
+        margin: 0
+
+    .adresse-mail
+        margin: 0
+
+    .contain-info
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+        img
+            width: 30px
+            height: 30px
+
+    .icon
+        width: 35px
+        height: 35px
+      
+
+    
 
 
