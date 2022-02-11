@@ -62,6 +62,15 @@ form {
   grid-template-rows: 15% 15% 15% 40% 15%;
   grid-template-areas: "title" "nom" "mail" "msg" "btn";
 }
+form input:focus {
+  outline: none;
+  background: rgba(246, 246, 246, 0.1);
+  box-shadow: inset 1.58667px -1.58667px 1.58667px rgba(197, 197, 197, 0.4), inset 3.17333px -3.17333px 3.17333px rgba(255, 255, 255, 0.4), inset -1.58667px 1.58667px 1.58667px rgba(255, 255, 255, 0.4), inset -3.17333px 3.17333px 3.17333px rgba(197, 197, 197, 0.4);
+  backdrop-filter: blur(15.8667px);
+}
+form input:hover {
+  border: solid 1px #FFFFFF;
+}
 
 .droite {
   width: 50%;
@@ -160,6 +169,9 @@ button {
   height: 45%;
   border-radius: 10px;
 }
+button:hover {
+  background-image: linear-gradient(to top, #00c6fb 0%, #005bea 100%);
+}
 
 .info {
   display: flex;
@@ -190,7 +202,7 @@ button {
   justify-content: center;
 }
 .contain-gif svg {
-  width: 50%;
+  width: 50vw;
 }
 
 .tel {
@@ -243,7 +255,7 @@ button {
     grid-template-rows: 35% 35% 30%;
   }
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1100px) {
   main {
     width: 81%;
     height: 95%;
@@ -467,12 +479,25 @@ button {
     margin-left: 7%;
   }
 
+  .contain-nom {
+    width: 60%;
+  }
+
+  .contain-prenom {
+    width: 60%;
+  }
+
   .mail {
     height: 70%;
   }
 
   .contain-btn button {
     height: 60%;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .contain-info {
+    margin-right: 5%;
   }
 }
 
