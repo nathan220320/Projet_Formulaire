@@ -408,32 +408,45 @@ button {
   }
 
   .contain-gif {
-    width: 60%;
+    width: 89vw;
+    margin-left: 0;
   }
 
   .contain-title2 h1 {
     font-size: 20px;
   }
+  .contain-title2 hr {
+    width: 185px;
+  }
 
   .contain-location {
     margin: 0;
+    justify-content: normal;
+    margin-left: 2%;
+    width: 200px;
   }
 
   .info {
     display: flex;
+    justify-content: center;
   }
 
   .tel {
     margin: 0;
+    justify-content: normal;
+    margin-left: 2%;
   }
 
   .adresse-mail {
     margin: 0;
+    justify-content: normal;
+    margin-left: 2%;
   }
 
   .contain-info {
     display: flex;
     flex-direction: column;
+    width: 50vw;
   }
   .contain-info img {
     width: 30px;
