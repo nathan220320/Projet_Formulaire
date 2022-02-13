@@ -17,7 +17,7 @@
 <body>
     <main>
         <section class="gauche">
-            <form action="" method="post" >
+            <form id="myForm" action="" method="post" >
                 <div class="contain-title">
                     <h1>CONTACTEZ-NOUS</h1>
                     <hr>
@@ -25,24 +25,24 @@
                 
                 <div class="contain-nom-prenom">
                     <div class="contain-nom">
-                        <p>Nom</p>
-                        <input type="text" class="nom" placeholder="Gringer">
+                        <label for="Nom">Nom</label>
+                        <input id="Nom" name="Nom" type="text" class="nom" placeholder="Gringer">
                     </div>
                     <div class="contain-prenom">
-                        <p>Prenom</p>
-                        <input type="text" class="prenom" placeholder="Thomas" >
+                        <label for="Prenom">Prenom</label>
+                        <input name="Prenom" type="text" class="prenom" placeholder="Thomas" >
                     </div>
                 </div>
                 <div class="contain-mail">
                     <div class="mail">
-                        <p>e-mail</p>
-                        <input type="email" class="email" placeholder="exemple@gmail.com" >
+                        <label for="Mail">e-mail</label>
+                        <input name="Mail" type="email" class="email" placeholder="exemple@gmail.com" >
                     </div>
                 </div>
                 <div class="contain-msg">
                     <div class="msg">
-                        <p>Message</p>
-                        <input type="text" class="message" placeholder="" >
+                        <label for="Message">Message</label>
+                        <textarea name="Message" class="message"></textarea>
                     </div>
                 </div>
                 <div class="contain-btn">
