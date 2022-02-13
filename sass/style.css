@@ -44,6 +44,16 @@ input {
   backdrop-filter: blur(34px);
   border-radius: 15px;
 }
+.message:focus {
+  outline: none;
+  background: rgba(246, 246, 246, 0.1);
+  box-shadow: inset 1.58667px -1.58667px 1.58667px rgba(197, 197, 197, 0.4), inset 3.17333px -3.17333px 3.17333px rgba(255, 255, 255, 0.4), inset -1.58667px 1.58667px 1.58667px rgba(255, 255, 255, 0.4), inset -3.17333px 3.17333px 3.17333px rgba(197, 197, 197, 0.4);
+  backdrop-filter: blur(15.8667px);
+}
+.message:hover {
+  border: solid 1px #FFFFFF;
+}
+
 h1 {
   font-family: "Montserrat", sans-serif;
   color: #fff;
