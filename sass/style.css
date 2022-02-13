@@ -1,3 +1,22 @@
+.valide {
+  color: #16BD13;
+  font-size: 0.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.notValide {
+  color: #F81111;
+  font-size: 0.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+#small1 {
+  color: #F81111;
+  font-size: 10px;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -27,6 +46,8 @@ main {
 }
 
 input {
+  margin: 0;
+  padding: 0;
   border: none;
   box-shadow: -17px 17px 17px 0px #FFFFFF1A inset;
   box-shadow: 17px -17px 17px 0px #C2C2C21A inset;
@@ -147,13 +168,17 @@ form input:hover {
   align-items: center;
 }
 
+span {
+  margin-bottom: 10px;
+}
+
 .mail {
   width: 87%;
   height: 45%;
 }
 
 .email {
-  height: 100%;
+  height: 90%;
   width: 100%;
 }
 
