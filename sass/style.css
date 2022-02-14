@@ -266,7 +266,8 @@ button:active {
   height: 65px;
 }
 .icon img:hover {
-  width: 12%;
+  width: 75px;
+  height: 75px;
   cursor: pointer;
 }
 
