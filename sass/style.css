@@ -63,7 +63,7 @@ h1 {
 }
 
 hr {
-  width: 50%;
+  width: 325px;
   margin-top: 1%;
 }
 
@@ -262,7 +262,8 @@ button:active {
   justify-content: center;
 }
 .icon img {
-  width: 10%;
+  width: 65px;
+  height: 65px;
 }
 .icon img:hover {
   width: 12%;
@@ -340,7 +341,7 @@ button:active {
   }
   .contain-title2 hr {
     margin-top: 0;
-    width: 37%;
+    width: 220px;
   }
 
   .info {
@@ -534,6 +535,11 @@ button:active {
 @media only screen and (max-width: 320px) {
   .contain-info {
     margin-right: 5%;
+  }
+}
+@media only screen and (max-width: 550px) {
+  main p {
+    font-size: 14px;
   }
 }
 
