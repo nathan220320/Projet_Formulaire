@@ -17,7 +17,7 @@
 <body>
     <main>
         <section class="gauche">
-            <form id="myForm" action="" >
+            <form id="myForm" action="/php/script.php" method="post">
                 <div class="contain-title">
                     <h1>CONTACTEZ-NOUS</h1>
                     <hr>
@@ -26,7 +26,7 @@
                 <div class="contain-nom-prenom">
                     <div class="contain-nom">
                         <label for="Nom">Nom</label>
-                        <input id="Nom" name="Nom" type="text" class="nom" placeholder="Gringer">
+                        <input id="Nom" name="Nom" type="text" class="nom" placeholder="Truand">
                     </div>
                     <div class="contain-prenom">
                         <label for="Prenom">Prenom</label>
@@ -37,7 +37,7 @@
                     <div class="mail">
                         <label for="Mail">e-mail</label>
                         <input name="Mail" type="text" id="mail" class="email" placeholder="exemple@gmail.com" >
-                        <span id="small1">ytytrhtrh</span>
+                        
                     </div>
                 </div>
                 <div class="contain-msg">
@@ -47,7 +47,7 @@
                     </div>
                 </div>
                 <div class="contain-btn">
-                    <button>Envoyez</button>
+                    <button type="submit" >Envoyez</button>
                 </div>
             </form>
         </section>
@@ -78,9 +78,9 @@
                 </div>
             </div>
             <div class="icon">
-                <img class="github" src="/Assets/github.svg" alt="icon de github">
-                <img src="/Assets/linkedin.svg" alt="icon de linkedin">
-                <img class="insta" src="/Assets/instagram.svg" alt="icon d'instagram">
+                <img id="icon-git" class="github" src="/Assets/github.svg" alt="icon de github">
+                <img id="icon-linkedin" src="/Assets/linkedin.svg" alt="icon de linkedin">
+                <img id="icon-insta" class="insta" src="/Assets/fb.svg" alt="icon d'instagram">
             </div>
             
         </section>
