@@ -475,6 +475,7 @@ button:active {
 
   .icon {
     height: 50%;
+    margin-top: 5%;
   }
   .icon img {
     width: 35px;
