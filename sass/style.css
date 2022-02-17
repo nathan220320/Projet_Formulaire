@@ -468,6 +468,10 @@ button:active {
     grid-template-rows: 35% 35% 35%;
     grid-template-areas: "location" "tel" "mail";
   }
+  .contain-info p {
+    -webkit-text-size-adjust: 14px;
+    -ms-text-size-adjust: 14px;
+  }
   .contain-info img {
     width: 30px;
     height: 30px;
