@@ -453,14 +453,15 @@ button:active {
   }
 
   .info {
-    width: 100%;
+    width: 85%;
     display: flex;
     justify-content: center;
   }
 
   .contain-info {
-    margin-left: 55%;
-    grid-template-columns: 50%;
+    width: 100%;
+    margin-left: 42%;
+    grid-template-columns: 100%;
     grid-template-rows: 35% 35% 35%;
     grid-template-areas: "location" "tel" "mail";
   }

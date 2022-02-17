@@ -53,11 +53,10 @@ form.addEventListener('submit', function(e) {
         })
         .then((data) => {
             console.log(data);
-            btn.style.backgroundColor = '#F81111'
+        
             
         })
         
-        ValidityState(formData)
 
     }   
     else{
