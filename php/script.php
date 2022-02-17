@@ -46,7 +46,7 @@
       $cleanmessage = true;
 
             
-      mail($to, 'un client vous a envoyé un retour dans la page contact', $name . $message, $adresseMail);
+      mail($to, 'un client vous a envoyé un retour dans la page contact', $name ."\r\n". $message, $adresseMail);
       echo json_encode('Votre message a bien été envoyé');
     }
   }
