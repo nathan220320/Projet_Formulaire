@@ -2,11 +2,11 @@
 let form = document.getElementById('myForm');
 let email = document.getElementById('mail');
 let nom = document.getElementById('Nom');
-let prenom = document.getElementById('prenom');
 let msg = document.getElementById('msg')
 let git = document.getElementById('icon-git');
-let linkedin = document.getElementById('icon-linkedin')
-let insta = document.getElementById('icon-insta')
+let linkedin = document.getElementById('icon-linkedin');
+let insta = document.getElementById('icon-insta');
+let btn = document.getElementById('btn');
 
 
 git.addEventListener('click', function() {
@@ -32,15 +32,14 @@ const regex3 = /^[a-zA-Z0-9-Zàáâäãåąčćęèéêëėįìíîïłńòóô�
 
 
 form.addEventListener('submit', function(e) {
-    e.preventDefault();
+    
     console.log('coucou');
     
   
     
-    if (regex.test(email.value)&&(regex2.test(nom.value))&&(regex2.test(prenom.value))&&(regex3.test(msg.value))){
+    if (regex.test(email.value)&&(regex2.test(nom.value))&&(regex3.test(msg.value))){
         email.style.border = '2px solid #16BD13'
         msg.style.border = '2px solid #16BD13'
-        prenom.style.border = '2px solid #16BD13'
         nom.style.border = '2px solid #16BD13'
 
         const formData = new FormData(form); 
@@ -54,12 +53,16 @@ form.addEventListener('submit', function(e) {
         })
         .then((data) => {
             console.log(data);
+            btn.style.backgroundColor = '#F81111'
+            
         })
         
-
+        ValidityState(formData)
 
     }   
     else{
+        
+        e.preventDefault();
         email.style.border = '2px solid #F81111'
         msg.style.border = '2px solid #F81111'
         prenom.style.border = '2px solid #F81111'

@@ -7,7 +7,6 @@ $phone: "only screen and (max-width: 425px)"
 $phone-petit: "only screen and (max-width: 320px)"
 
 
-
 *
     padding: 0
     margin: 0
@@ -89,6 +88,7 @@ form
     grid-template-rows: 15% 15% 15% 40% 15%
     grid-template-areas: "title" "nom" "mail" "msg" "btn" 
     input
+        font-size: 20px
         &:focus
             outline: none
             background: rgba(246, 246, 246, 0.1)
@@ -124,40 +124,41 @@ form
 .contain-title2
     display: none
 
-.contain-nom-prenom
+.contain-nom
     grid-area: nom
     +flexContain
     justify-content: space-evenly
+    height: 100%
 
-.contain-nom
-    width: 40%
-    height: 45%
-
-.contain-prenom
-    width: 40%
-    height: 45%
-    
 .nom
-    width: 100%
-    height: 90%
+    width: 87%
+    height: 100%
+    display: flex
+    flex-direction: column
+    justify-content: center
 
-.prenom
+
+.input-nom
     width: 100%
-    height: 90%
+    height: 45%
+
     
 
 .contain-mail
     grid-area: mail
     +flexContain
+    height: 100%
 
-span
-    margin-bottom: 20px
 .mail
     width: 87%
-    height: 45%
+    height: 100%
+    display: flex
+    flex-direction: column
+    justify-content: center
+    
 
-.email
-    height: 90%
+.input-mail
+    height: 45%
     width: 100%
 
 .contain-msg
@@ -167,6 +168,9 @@ span
 .msg
     width: 87%
     height: 80%
+    display: flex
+    flex-direction: column
+    justify-content: center
 
 
 .message
@@ -270,7 +274,9 @@ button
     
 @media #{$up-pc}
 
-    
+    .info
+        p
+            font-size: 20px
    
     .droite
         grid-template-rows: 35% 45% 20% 
@@ -362,40 +368,15 @@ button
         grid-template-rows: 20% 20% 45% 15%
         grid-template-columns: 100% 
         grid-template-areas: "nom" "mail" "msg" "btn"
+
+        input
+            font-size: 15px
     
     p
         margin: 0
     
-    .contain-nom
-        height: 100%
-        p
-            margin-bottom: 1%
-            margin-left: 5%
+ 
 
-    .nom
-        height: 45%
-        
-    .contain-prenom
-        height: 100%
-        p
-            margin-bottom: 1%
-            margin-left: 5%
-
-    .prenom
-        height: 45%
-   
-
-    .mail
-        height: 100%
-        p
-            margin-bottom: 1%
-            margin-left: 2%
-
-    .email
-        height: 45%
-
-    .contain-nom-prenom
-        align-items: center
 
     .msg
         height: 100%
@@ -432,40 +413,42 @@ button
             width: 185px
 
     .contain-location
-        margin: 0
-        justify-content: normal
-        margin-left: 2%
-        width: 200px
+        justify-content: flex-start
         
         
     
     .info
-        display: flex
+
         justify-content: center
+    
         
         
 
     .tel
-        margin: 0
-        justify-content: normal
-        margin-left: 2%
+    
+        justify-content: flex-start
+        
        
         
 
     .adresse-mail
-        margin: 0
-        justify-content: normal
-        margin-left: 2%
+        justify-content: flex-start
         
+      
+    .info
+        width: 100%
+        display: flex
+        justify-content: center    
 
     .contain-info
-        display: flex
-        flex-direction: column
-        width: 50vw
-    
+        margin-left: 55%
+        grid-template-columns: 50%
+        grid-template-rows: 35% 35% 35%
+        grid-template-areas: "location" "tel" "mail"
         img
             width: 30px
             height: 30px
+
 
     .icon
         height: 50%
@@ -473,29 +456,37 @@ button
             width: 35px
             height: 35px
       
-    .contain-nom-prenom
-        flex-direction: column
-        align-items: flex-start
-        margin-left: 7% 
 
-    .contain-nom
-        width: 60%
+    form
 
-    .contain-prenom
-        width: 60%
-
-    .mail
-        height: 70%
-
-    
+        label
+            font-size: 15px
+            
+        #msg
+            font-size: 15px
+        input
+            font-size: 15px
 
     .contain-btn
+
         button
+            font-size: 15px
             height: 60%
+
+    .icon
+  
+        img:hover
+            width: 40px
+            height: 40px
+            cursor: pointer
 
 @media #{$phone-petit}
     .contain-info
-        margin-right: 5%
+       margin-left: 40%
+
+    .contain-location
+        width: 200px
+
 
 
 @media #{$tablette2}

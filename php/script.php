@@ -2,7 +2,6 @@
   
 
   $name = $_POST['Nom'];
-  $prenom = $_POST['Prenom'];
   $adresseMail = $_POST['Mail'];
   $message = $_POST['Message'];
   $to = 'n.rebours@codeur.online';
@@ -19,11 +18,10 @@
   $cleanname = false;
   $cleanemail = false;
   $cleanmessage = false;
-  $cleanprenom = false;
   $number = "";
   $aaa = false;
 
-  if (isset($adresseMail) && $adresseMail != "" && isset($name) && $name != "" && isset($prenom) && $prenom != "" && isset($message) && $message != "") {
+  if (isset($adresseMail) && $adresseMail != "" && isset($name) && $name != "" && isset($message) && $message != "") {
 
 
     $pattern = "/^[a-zA-ZÀ-ÿ0-9-']+$/";
@@ -40,8 +38,6 @@
       htmlentities($name);
       $cleanname = true;
 
-      htmlentities($prenom);
-      $cleanprenom = true;
 
       htmlentities($adresseMail);
       $cleanemail = true;
