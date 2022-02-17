@@ -445,11 +445,14 @@ button:active {
   }
 
   .tel {
+    width: 150px;
     justify-content: flex-start;
   }
 
   .adresse-mail {
+    width: 150px;
     justify-content: flex-start;
+    margin-top: 5%;
   }
 
   .info {
@@ -459,7 +462,7 @@ button:active {
   }
 
   .contain-info {
-    width: 100%;
+    width: 90%;
     margin-left: 42%;
     grid-template-columns: 100%;
     grid-template-rows: 35% 35% 35%;
